@@ -17,8 +17,8 @@ class ButtonWidget extends StatelessWidget {
     return MaterialButton(
       elevation: 6.0,
       shape: AppTheme.shape,
+      minWidth: MediaQuery.of(context).size.width,
       padding: EdgeInsets.symmetric(
-          horizontal: MediaQuery.of(context).size.height / 6,
           vertical: MediaQuery.of(context).size.height / 50),
       color: Theme.of(context).highlightColor,
       child: Text(buttonText,
